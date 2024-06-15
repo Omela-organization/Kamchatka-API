@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-# from src.routers.v1.auth import router_auth
+from src.routers.v1.auth import router_auth
 from src.routers.v1.user import router_user
 from src.routers.v1.role import router_role
 from src.routers.v1.status import router_status
@@ -16,7 +16,7 @@ from src.routers.v1.eco_monitoring import router_eco_monitoring
 
 base_router = APIRouter(prefix="/api/v1")
 
-# base_router.include_router(router_auth)
+base_router.include_router(router_auth)
 base_router.include_router(router_user)
 base_router.include_router(router_role)
 base_router.include_router(router_status)

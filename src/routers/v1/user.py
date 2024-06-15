@@ -7,12 +7,14 @@ from starlette import status
 from src.db.models import User
 from src.routers.dependensies import get_db
 from src.schemas.user import UserRead, UserCreate, UserUpdate
+from src.scripts.hash_password import hashing_password
 
 router_user = APIRouter(prefix="/users", tags=["User"])
 
 
 @router_user.post("/add-user", response_model=UserRead)
 async def create_user(user: UserCreate, db: AsyncSession = Depends(get_db)):
+    user.password = hashing_password(user.password)
     new_user = User(**user.dict())
     db.add(new_user)
     await db.commit()
