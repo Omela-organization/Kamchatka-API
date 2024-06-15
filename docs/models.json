@@ -1,0 +1,120 @@
+[
+  {
+    // USER MODEl
+    "id": 1,
+    "email": "dfgsdffg@gmail.com",
+    "password": "hashed",
+    "role": {
+      "id": 1,
+      "name": "user"
+    },
+    "created_at": "2024-06-09 08:19:01.218905",
+    "update_at": "2024-06-09 08:19:01.218905"
+  },
+  {
+    // CUSTOMERE MODEl
+    "id": 1,
+    "name": "ivan",
+    "surname": "testov",
+    "phone": "+79876543321",
+    "user": {
+      "id": 1,
+      "email": "dfgsdffg@gmail.com",
+      "role": {
+        "id": 1,
+        "name": "user"
+      },
+      "created_at": "2024-06-09 08:19:01.218905",
+      "update_at": "2024-06-09 08:19:01.218905"
+    },
+    "created_at": "2024-06-09 08:19:01.218905",
+    "update_at": "2024-06-09 08:19:01.218905"
+  },
+  // ROLE
+  {
+    "id": 1,
+    "name": "admin"
+  },
+  // ECO PROBLEM
+  {
+    "id": 1,
+    "territory": {
+      "id": 1,
+      "name": "Park1"
+    },
+    "track": {
+      "id": 1,
+      "name": "to vulkan"
+    },
+    "title": "Some trash",
+    "description": "help plz",
+    "creator_id": 1,
+    "admin_id": 2,
+    "status": {
+      "id": 1,
+      "name": "Создано"
+    },
+    "type_incident": {
+      "id": 1,
+      "name": "Мусорки"
+    },
+    "photos": [
+      {
+        "id": 1
+      },
+      {
+        "id": 2
+      }
+    ],
+    "type_incident_classificated": {
+      "id": 1,
+      "name": "Мусорки",
+      "probability": 0.95
+    },
+    "document_id": 1,
+    "is_classificated": true,
+    "point": {
+      "longitude": 54.123123,
+      "latitude": 45.1231231
+    }
+  },
+  // STATUS
+  {
+    "id": 1,
+    "name": "Создано"
+  },
+  // TYPE INCIDENTS
+  {
+    "id": 1,
+    "name": "trash"
+  },
+  // PHOTO
+  {
+    "id": 1,
+    "eco_problem_id": 1,
+    "path_to_file": "34235345345334.jpg",
+    "data": "base64 format"
+  },
+  // DOCUMENT
+  {
+    "id": 1,
+    "file_name": "some.pdf",
+    "path_to_file": "docs/some.pdf",
+    "data": "base64: format"
+  },
+  // TERRITORY
+  {
+    "id": 1,
+    "name": "Park1",
+    "description": "Cool park",
+    "data": "geojson data"
+  },
+  // TRACK
+  {
+    "id": 1,
+    "name": "to Vulkan",
+    "territory_id": 1,
+    "description": "Cool track to vulkan",
+    "data": "geojson data"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "string",
+  "creator_id": 0,
+  "administrator_id": 0,
+  "territory_id": 0,
+  "track_id": 0,
+  "start_date": "2024-06-15",
+  "end_date": "2024-06-15",
+  "car_plate": "string",
+  "is_permitted": false,
+  "visitors": [
+    {
+      "surname": "string",
+      "name": "string",
+      "patronymic": "string",
+      "birthday": "string",
+      "citizenship": "string",
+      "refistration_region": "string",
+      "gender": "string",
+      "passport": "string",
+      "email": "string",
+      "phone": "string"
+    }
+  ]
+}
