@@ -7,3 +7,4 @@
 ### Ссылка на репозиторий с детекцией вырубки деревьев https://github.com/Omela-organization/Kamchatka-Deforestation
 ### Ссылка на репозиторий с расчетом антропогенной нагрузки https://github.com/Omela-organization/Kamchatka-Antropogenic-Pressure
 
+#### Ссылка на яндекс диск с моделями, которые не помемстились в на Github https://disk.yandex.ru/d/0mvy1ob8kfweog
