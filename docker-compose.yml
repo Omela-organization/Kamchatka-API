@@ -5,12 +5,12 @@ services:
     image: postgres:15
     container_name: eco_kamchatka_db
     restart: always
-    ports:
-      - "5432:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=EcoKamchatka
+    ports:
+      - "5499:5432"
     volumes:
       - /home/user1/DOCKER/eco_kamchatka_db:/var/lib/postgresql/data
     healthcheck:
